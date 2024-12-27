@@ -12,8 +12,6 @@ import time
 import uuid
 import base64
 
-load_dotenv()
-
 # app config
 st.set_page_config(page_title="Streamlit Chatbot", page_icon="🤖")
 st.title("Law Phil :books:")
