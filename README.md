@@ -21,7 +21,7 @@ A Retrieval-Augmented Generation (RAG) system using only 1 lawphil case [https:/
 - **Frontend**: Streamlit
 - **Vector Database**: Annoy
 - **Reranker**: FlashRank
-- **ML Framework**: PyTorch
+- **Framework**: Langchain, LCEL
 
 ## Future enhancement consideration 
 - Login/Signup Feature using Firebase
