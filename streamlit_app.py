@@ -58,9 +58,8 @@ def get_response(user_query, chat_history):
 
 def main():
 
-    # sidebar_ui_functionalities()    
-    st.write(st.secrets["OPENAI_API_KEY"])
-    
+    # sidebar_ui_functionalities()
+
     welcome_message = "Hello! What can I help with? 😊"
     # session state
     if "chat_history" not in st.session_state:
