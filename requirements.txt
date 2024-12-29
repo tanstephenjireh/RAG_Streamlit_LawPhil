@@ -1,6 +1,7 @@
 annoy==1.17.3
 langchain==0.3.3
 langchain-openai==0.2.2
+langchain-core==0.3.10
 langchain-community==0.3.2
 openai==1.51.2
 tiktoken==0.8.0
