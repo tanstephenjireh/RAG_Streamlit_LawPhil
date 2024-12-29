@@ -1,10 +1,10 @@
 python-dotenv==1.0.1
 pydantic==2.9.2
-langchain-core==0.3.10
-langchain==0.3.3
+langchain-core==0.1.27
+langchain==0.1.9
 langchain-community==0.3.2
-langchain-openai==0.2.2
-openai==1.51.2
+langchain-openai==0.0.5
+openai==1.12.0
 annoy==1.17.3
 flashrank==0.2.9
 streamlit==1.39.0
