@@ -25,7 +25,7 @@ def conversational_chain(rephrased_query, context):
 
     prompt = ChatPromptTemplate.from_template(template)
 
-    llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"),
+    llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"),
                     model_name='gpt-4o-mini-2024-07-18', #gpt-4o-mini-2024-07-18
                     temperature=0.0
                     )

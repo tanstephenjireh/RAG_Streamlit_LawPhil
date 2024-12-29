@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def _load_annoy():
-    embedding = OpenAIEmbeddings(model='text-embedding-ada-002', openai_api_key=st.secrets["OPENAI_API_KEY"])
+    embedding = OpenAIEmbeddings(model='text-embedding-ada-002', api_key=st.secrets["OPENAI_API_KEY"])
     ANNOY_LOCAL_PATH = "kb/poc_bot_kb"
     annoy_db = Annoy.load_local(
                         ANNOY_LOCAL_PATH, 
@@ -51,7 +51,7 @@ def multi_query_ret():
         input_variables=["question"],
         template=temp,
     )
-    llm_multi = ChatOpenAI(temperature=0.5, openai_api_key=st.secrets["OPENAI_API_KEY"])
+    llm_multi = ChatOpenAI(temperature=0.5, api_key=st.secrets["OPENAI_API_KEY"])
 
     # Chain
     # llm_chain = LLMChain(llm=llm_multi, prompt=QUERY_PROMPT, output_parser=output_parser)
