@@ -51,7 +51,7 @@ def multi_query_ret():
         input_variables=["question"],
         template=temp,
     )
-    llm_multi = ChatOpenAI(temperature=0.5, openai_api_key=os.environ.get("OPENAI_API_KEY"))
+    llm_multi = ChatOpenAI(temperature=0.5, openai_api_key=st.secrets["OPENAI_API_KEY"])
 
     # Chain
     # llm_chain = LLMChain(llm=llm_multi, prompt=QUERY_PROMPT, output_parser=output_parser)
