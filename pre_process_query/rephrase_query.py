@@ -20,7 +20,7 @@ def rephrase_query(user_query, chat_history):
 
     prompt = ChatPromptTemplate.from_template(CONDENSE_QUESTION_TEMPLATE)
 
-    llm = ChatOpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"],
+    llm = ChatOpenAI(api_key=st.secrets["OPENAI_API_KEY"],
                     model_name='gpt-4o-mini-2024-07-18', #gpt-4o-mini-2024-07-18
                     temperature=0.0
                     )
