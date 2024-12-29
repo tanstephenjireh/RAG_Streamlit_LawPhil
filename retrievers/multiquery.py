@@ -9,13 +9,14 @@ from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Annoy
+import streamlit as st
 
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 def _load_annoy():
-    embedding = OpenAIEmbeddings(model='text-embedding-ada-002', openai_api_key=os.getenv("OPENAI_API_KEY"))
+    embedding = OpenAIEmbeddings(model='text-embedding-ada-002', openai_api_key=st.secrets["OPENAI_API_KEY"])
     ANNOY_LOCAL_PATH = "kb/poc_bot_kb"
     annoy_db = Annoy.load_local(
                         ANNOY_LOCAL_PATH, 
